@@ -87,7 +87,7 @@ contract Lottery is VRFConsumerBaseV2, KeeperCompatibleInterface {
     }
 
     /**
-     *@dev This is the function tha the function that the Chainlink keeper nodes call
+     *@dev This is the function that the Chainlink keeper nodes call
      * They look for the "upKeepNeeded" to be true
      * The following should be true in order to return true:
      * 1. Our time interval should be passed
