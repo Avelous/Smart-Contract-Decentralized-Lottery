@@ -7,7 +7,11 @@ const FRONT_END_ABI_FILE =
  "../nextjs-lottery-smartcontract/constants/abi.json"
 
 
-
+/** @title A Lottery SmartContract
+ * @author Avelous Ujiri
+ * @notice This Script is for updating the frontend with constants: Contract address and ABI
+ * @dev This allows interaction between front end and backend
+ */
 
 module.exports = async function () {
     if (process.env.UPDATE_FRONT_END) {

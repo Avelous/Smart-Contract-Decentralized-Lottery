@@ -1,5 +1,11 @@
 const { ethers, network } = require("hardhat")
 
+/** @title A Lottery SmartContract
+ * @author Avelous Ujiri
+ * @notice This Script is for mimicking the chainlink keepers and vrf on development chains
+ * @dev This implements Chainlink VRF V2 and Chainlink Keepers
+ */
+
 async function mockKeepers() {
     const lottery = await ethers.getContract("Lottery")
     interval = await lottery.getInterval()
